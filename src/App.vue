@@ -4,6 +4,7 @@
       <AppHeader />
     </header>
     <main>
+      <AppJumbotron />
       <AppMain />
     </main>
     <footer>
@@ -16,6 +17,7 @@
 import AppHeader from "./components/AppHeader.vue";
 import AppMain from "./components/AppMain.vue";
 import Appfooter from "./components/Appfooter.vue";
+import AppJumbotron from "./components/AppJumbotron.vue";
 
 export default {
   name: "App",
@@ -23,12 +25,16 @@ export default {
     AppHeader,
     AppMain,
     Appfooter,
-  },
+    AppJumbotron
+},
 };
 </script>
 
 <style lang="scss">
 @import "./assets/style/common.scss";
 @import "./assets/style/variables.scss";
+header {
+  padding: .5rem 0;
+}
 
 </style>
