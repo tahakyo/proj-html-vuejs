@@ -13,20 +13,22 @@
 </template>
 
 <script>
-import AppHeader from './components/AppHeader.vue';
-import AppMain from './components/AppMain.vue';
-import Appfooter from './components/Appfooter.vue';
+import AppHeader from "./components/AppHeader.vue";
+import AppMain from "./components/AppMain.vue";
+import Appfooter from "./components/Appfooter.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     AppHeader,
     AppMain,
-    Appfooter
-}
-}
+    Appfooter,
+  },
+};
 </script>
 
 <style lang="scss">
+@import "./assets/style/common.scss";
+@import "./assets/style/variables.scss";
 
 </style>
