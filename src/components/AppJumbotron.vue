@@ -2,7 +2,7 @@
   <div class="jumbotron">
     <div class="jumbotron__left">
       <div class="title">The biggest platform for your growth.</div>
-      <div class="small-text">
+      <div class="small-text-jumbotron">
         There are many variations of passages of Lorem Ipsum available, but the
         majority has suffered alteration in some form
       </div>
@@ -38,7 +38,7 @@ export default {
       margin: 2rem 0;
       line-height: 1.5em;
     }
-    .small-text {
+    .small-text-jumbotron {
       color: $text-color04;
       margin: 2rem 0;
     }
