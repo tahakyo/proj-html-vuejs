@@ -1,13 +1,25 @@
 <template>
-  <div>Questo è il main</div>
+  <div class="container">
+    <div class="online_marketing">
+      <OnlineMarketingCard />
+      <OnlineMarketingCard />
+      <OnlineMarketingCard />
+    </div>
+  </div>
 </template>
 
 <script>
+import OnlineMarketingCard from './OnlineMarketingCard.vue';
 export default {
-  name: "AppMain"
-}
+    name: "AppMain",
+    components: { OnlineMarketingCard }
+};
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.online_marketing {
+  margin-top: 7rem;
+  display: flex;
+  
+}
 </style>
