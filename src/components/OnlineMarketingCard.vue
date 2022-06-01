@@ -21,6 +21,9 @@
 <script>
 export default {
   name: "OnlineMarketingCard",
+  props: {
+    marketingCard: Array
+  }
 };
 </script>
 
