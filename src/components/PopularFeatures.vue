@@ -16,9 +16,9 @@
         </div>
       </div>
       <div class="cards">
-        <div class="card">
-          <div class="title">Customized Invoices</div>
-          <div class="icon"><img src="../assets/img/icon7.png" alt="" /></div>
+        <div v-for="(item, index) in featuresCard" :key="index" class="card">
+          <div class="title">{{item.title}}</div>
+          <div class="icon"><img :src="require(`../assets/img/${item.icon}`)" alt="" /></div>
         </div>
       </div>
     </div>
@@ -28,6 +28,9 @@
 <script>
 export default {
   name: "PopularFeatures",
+  props: {
+    featuresCard: Array
+  }
 };
 </script>
 
@@ -36,8 +39,8 @@ export default {
 section {
   background-image: url("../assets/img/14.png");
   background-repeat: no-repeat;
-  background-position-x: -400px;
-  background-size: 40%;
+  background-position-x: -300px;
+  background-size: 30%;
   .features {
     display: flex;
     align-items: center;
@@ -57,10 +60,14 @@ section {
     }
   }
   .cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
     .card {
-      width: 25%;
+      width: calc(100% / 4 - 1rem);
       box-shadow: 0px 1px 20px 5px lightgrey;
       padding: 5px;
+      margin: 0 1rem 1rem 0;
       .title {
         font-size: 15px;
         font-weight: 400;

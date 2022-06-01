@@ -9,7 +9,7 @@
       </section>
     </div>
     <section>
-      <PopularFeatures />
+      <PopularFeatures :featuresCard="featuresCard" />
     </section>
   </div>
 </template>
@@ -38,6 +38,40 @@ export default {
           logo: "",
           title: "",
           text: "",
+        },
+      ],
+      featuresCard: [
+        {
+          title: "Customized Invoices",
+          icon: "icon1.png",
+        },
+        {
+          title: "Stock Management",
+          icon: "icon2.png",
+        },
+        {
+          title: "Receivable § Payables",
+          icon: "icon3.png",
+        },
+        {
+          title: "Manage Buying",
+          icon: "icon4.png",
+        },
+        {
+          title: "Powerful & Secure",
+          icon: "icon5.png",
+        },
+        {
+          title: "Fastest Return Filing",
+          icon: "icon3.png",
+        },
+        {
+          title: "Monthly Detailed",
+          icon: "icon7.png",
+        },
+        {
+          title: "Product Management",
+          icon: "icon8.png",
         },
       ],
     };
