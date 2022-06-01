@@ -1,20 +1,28 @@
 <template>
-  <div class="card">
-    <div class="card__head">
-      <img class="logo" src="../assets/img/24.png" alt="logo" />
-      <div class="text">
-        <div class="title">Online Marketing</div>
-        <div class="small_text">
-          It's a long established fact that a reader will be distracted
+  <div class="container">
+    <div class="online-marketing">
+      <div v-for="(element, index) in marketingCard" :key="index" class="card">
+        <div class="card__head">
+          <img
+            class="logo"
+            :src="require(`../assets/img/${element.logo}`)"
+            alt="logo"
+          />
+          <div class="text">
+            <div class="title">{{ element.title }}</div>
+            <div class="small_text">
+              {{ element.text }}
+            </div>
+          </div>
         </div>
+        <ul>
+          <li><i class="fas fa-check"></i>seo</li>
+          <li><i class="fas fa-check"></i>sem</li>
+          <li><i class="fas fa-check"></i>Website Strategy</li>
+          <li><i class="fas fa-check"></i>social management</li>
+        </ul>
       </div>
     </div>
-    <ul>
-      <li><i class="fas fa-check"></i>seo</li>
-      <li><i class="fas fa-check"></i>sem</li>
-      <li><i class="fas fa-check"></i>Website Strategy</li>
-      <li><i class="fas fa-check"></i>social management</li>
-    </ul>
   </div>
 </template>
 
@@ -22,14 +30,17 @@
 export default {
   name: "OnlineMarketingCard",
   props: {
-    marketingCard: Array
-  }
+    marketingCard: Array,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../assets/style/variables.scss";
-.card {
+.online-marketing {
+  display: flex;
+  margin-top: 7rem;
+  .card {
     padding: 1rem;
     &__head {
       display: flex;
@@ -65,4 +76,5 @@ export default {
       }
     }
   }
+}
 </style>

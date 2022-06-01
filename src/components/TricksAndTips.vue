@@ -1,44 +1,46 @@
 <template>
-  <section class="tricks">
-    <div class="tricks__left">
-      <div class="first-object">
-        <div class="large-text">
-          Get tips tricks on how to skyrocket your sales
-        </div>
-        <div class="small-text">
-          Faff about only a quid blower I don't want no agro bleeding chimney
-          pot burke tosser cras nice one boot fanny.!
-        </div>
-      </div>
-      <div class="second-object">
-        <div class="logo">
-          <img src="../assets/img/510.png" alt="logo" />
-        </div>
-        <div class="text">
-          <div class="title">Reporting Analysis</div>
+  <div class="container">
+    <section class="tricks">
+      <div class="tricks__left">
+        <div class="first-object">
+          <div class="large-text">
+            Get tips tricks on how to skyrocket your sales
+          </div>
           <div class="small-text">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+            Faff about only a quid blower I don't want no agro bleeding chimney
+            pot burke tosser cras nice one boot fanny.!
+          </div>
+        </div>
+        <div class="second-object">
+          <div class="logo">
+            <img src="../assets/img/510.png" alt="logo" />
+          </div>
+          <div class="text">
+            <div class="title">Reporting Analysis</div>
+            <div class="small-text">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </div>
+          </div>
+        </div>
+        <div class="third-object">
+          <div class="logo">
+            <img src="../assets/img/511.png" alt="logo" />
+          </div>
+          <div class="text">
+            <div class="title">Technical SEO Audit</div>
+            <div class="small-text">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </div>
           </div>
         </div>
       </div>
-      <div class="third-object">
-        <div class="logo">
-          <img src="../assets/img/511.png" alt="logo" />
-        </div>
-        <div class="text">
-          <div class="title">Technical SEO Audit</div>
-          <div class="small-text">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
-          </div>
-        </div>
+      <div class="tricks__right">
+        <img src="../assets/img/509.jpeg" alt="image" />
       </div>
-    </div>
-    <div class="tricks__right">
-      <img src="../assets/img/509.jpeg" alt="image" />
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>

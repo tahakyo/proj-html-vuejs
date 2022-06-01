@@ -1,15 +1,17 @@
 <template>
   <div>
-    <div class="container">
-      <section class="online_marketing">
-        <OnlineMarketingCard v-for="index in marketingCard" :key="index" />
-      </section>
-      <section>
-        <TricksAndTips />
-      </section>
-    </div>
+    <section>
+      <OnlineMarketingCard :marketingCard="marketingCard" />
+    </section>
+    <section>
+      <TricksAndTips />
+    </section>
+
     <section>
       <PopularFeatures :featuresCard="featuresCard" />
+    </section>
+    <section>
+      <OurTestimonials />
     </section>
   </div>
 </template>
@@ -18,26 +20,32 @@
 import OnlineMarketingCard from "./OnlineMarketingCard.vue";
 import TricksAndTips from "./TricksAndTips.vue";
 import PopularFeatures from "./PopularFeatures.vue";
+import OurTestimonials from "./OurTestimonials.vue";
 export default {
   name: "AppMain",
-  components: { OnlineMarketingCard, TricksAndTips, PopularFeatures },
+  components: {
+    OnlineMarketingCard,
+    TricksAndTips,
+    PopularFeatures,
+    OurTestimonials,
+  },
   data: function () {
     return {
       marketingCard: [
         {
-          logo: "",
-          title: "",
-          text: "",
+          logo: "24.png",
+          title: "Online Marketing",
+          text: "It's a long established fact that a reader will be distracted",
         },
         {
-          logo: "",
-          title: "",
-          text: "",
+          logo: "24.png",
+          title: "Online Marketing",
+          text: "It's a long established fact that a reader will be distracted",
         },
         {
-          logo: "",
-          title: "",
-          text: "",
+          logo: "24.png",
+          title: "Online Marketing",
+          text: "It's a long established fact that a reader will be distracted",
         },
       ],
       featuresCard: [

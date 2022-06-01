@@ -55,8 +55,11 @@ section {
       &__small {
         font-size: 12px;
         color: $text-color04;
-        width: 80%;
+        width: 50%;
       }
+    }
+    .button {
+      padding-right: 3rem;
     }
   }
   .cards {
