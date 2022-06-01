@@ -2,14 +2,10 @@
   <div class="container">
     <div class="nav">
       <div class="nav__logo">
-        <img src="../assets/img/logo-2.png" alt="header-logo">
+        <img src="../assets/img/logo-2.png" alt="header-logo" />
       </div>
       <ul class="nav__menu">
-          <li><a href="">menu#</a></li>
-          <li><a href="">menu#</a></li>
-          <li><a href="">menu#</a></li>
-          <li><a href="">menu#</a></li>
-          <li><a href="">menu#</a></li>
+        <li v-for="(element, index) in navMenu" :key="index"><a href="">{{element.menu}}</a></li>
       </ul>
       <div class="nav__actions">
         <i class="fas fa-search"></i>
@@ -24,8 +20,11 @@
 
 <script>
 export default {
-  name: "AppHeader"
-}
+  name: "AppHeader",
+  props: {
+    navMenu: Array,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -57,7 +56,6 @@ export default {
     a {
       color: white;
     }
-    
   }
 }
 </style>

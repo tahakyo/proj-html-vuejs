@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <AppHeader />
+      <AppHeader :navMenu="navMenu" />
     </header>
     <main>
       <AppJumbotron />
@@ -25,8 +25,39 @@ export default {
     AppHeader,
     AppMain,
     Appfooter,
-    AppJumbotron
-},
+    AppJumbotron,
+  },
+  data: function () {
+    return {
+      navMenu: [
+        {
+          url: "#",
+          menu: "Home",
+          active: "true",
+        },
+        {
+          url: "#",
+          menu: "About Us",
+          active: "false",
+        },
+        {
+          url: "#",
+          menu: "Feature",
+          active: "false",
+        },
+        {
+          url: "#",
+          menu: "Testimonials",
+          active: "false",
+        },
+        {
+          url: "#",
+          menu: "Contact Us",
+          active: "false",
+        },
+      ],
+    };
+  },
 };
 </script>
 
@@ -34,7 +65,6 @@ export default {
 @import "./assets/style/common.scss";
 @import "./assets/style/variables.scss";
 header {
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
-
 </style>
