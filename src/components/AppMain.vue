@@ -1,19 +1,11 @@
 <template>
-  <div>
-    <section>
-      <OnlineMarketingCard :marketingCard="marketingCard" />
-    </section>
-    <section>
-      <TricksAndTips />
-    </section>
-
-    <section>
-      <PopularFeatures :featuresCard="featuresCard" />
-    </section>
-    <section>
-      <OurTestimonials />
-    </section>
-  </div>
+  <section>
+    <OnlineMarketingCard :marketingCard="marketingCard" />
+    <TricksAndTips />
+    <PopularFeatures :featuresCard="featuresCard" />
+    <OurTestimonials :testimonialsCard="testimonialsCard" />
+    <LatestPosts :latestPostsCard="latestPostsCard" />
+  </section>
 </template>
 
 <script>
@@ -21,6 +13,7 @@ import OnlineMarketingCard from "./OnlineMarketingCard.vue";
 import TricksAndTips from "./TricksAndTips.vue";
 import PopularFeatures from "./PopularFeatures.vue";
 import OurTestimonials from "./OurTestimonials.vue";
+import LatestPosts from "./latestPosts.vue";
 export default {
   name: "AppMain",
   components: {
@@ -28,6 +21,7 @@ export default {
     TricksAndTips,
     PopularFeatures,
     OurTestimonials,
+    LatestPosts,
   },
   data: function () {
     return {
@@ -80,6 +74,40 @@ export default {
         {
           title: "Product Management",
           icon: "icon8.png",
+        },
+      ],
+      testimonialsCard: [
+        {
+          icon: "26.jpeg",
+          name: "Julia Aann",
+          profession: "Coo Sofbox",
+          desc: "At vero eos et accusamus et iusto odio dignissimos At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur ducimus qui blanditiis praesentium vero eos et consectetur accus adip adi accus adip adip",
+        },
+        {
+          icon: "27.jpeg",
+          name: "Mac Znder",
+          profession: "Manager sofbox",
+          desc: "At vero eos et accusamus et iusto odio dignissimos At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur ducimus qui blanditiis praesentium vero eos et consectetur accus adip adi accus adip adip",
+        },
+      ],
+      latestPostsCard: [
+        {
+          thumb: "19.jpg",
+          date: "November 28, 2019",
+          title: "Life Lack Meaning",
+          text: "It is a long established fact that a reader will be distracted by the readable.",
+        },
+        {
+          thumb: "18.jpg",
+          date: "November 28, 2019",
+          title: "Life Lack Meaning",
+          text: "It is a long established fact that a reader will be distracted by the readable.",
+        },
+        {
+          thumb: "17.jpg",
+          date: "November 28, 2019",
+          title: "Life Lack Meaning",
+          text: "It is a long established fact that a reader will be distracted by the readable.",
         },
       ],
     };
