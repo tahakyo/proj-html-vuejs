@@ -5,6 +5,7 @@
     <PopularFeatures :featuresCard="featuresCard" />
     <OurTestimonials :testimonialsCard="testimonialsCard" />
     <LatestPosts :latestPostsCard="latestPostsCard" />
+    <AppContacts />
   </section>
 </template>
 
@@ -14,6 +15,7 @@ import TricksAndTips from "./TricksAndTips.vue";
 import PopularFeatures from "./PopularFeatures.vue";
 import OurTestimonials from "./OurTestimonials.vue";
 import LatestPosts from "./latestPosts.vue";
+import AppContacts from "./AppContacts.vue";
 export default {
   name: "AppMain",
   components: {
@@ -22,7 +24,8 @@ export default {
     PopularFeatures,
     OurTestimonials,
     LatestPosts,
-  },
+    AppContacts
+},
   data: function () {
     return {
       marketingCard: [

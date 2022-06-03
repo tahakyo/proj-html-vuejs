@@ -36,49 +36,52 @@ export default {
 
 <style lang="scss" scoped>
 @import "../assets/style/variables.scss";
-.text {
-  text-align: center;
-  margin-bottom: 4rem;
-  .title {
-    font-size: 30px;
-    padding-bottom: 1rem;
-  }
-  .small-text {
-    font-size: 12px;
-    color: $text-color06;
-  }
-}
-.cards {
-  display: flex;
-  justify-content: space-between;
-  .card {
-    border: 1px solid lightgrey;
-    padding: 8px;
-    width: calc(100% / 3 - 2rem);
-    margin-right: 1rem;
-    &__img {
-      position: relative;
+section {
+  margin-bottom: 6rem;
+  .text {
+    text-align: center;
+    margin-bottom: 4rem;
+    .title {
+      font-size: 30px;
+      padding-bottom: 1rem;
     }
-    &__date {
-      position: absolute;
-      top: 0;
-      background: white;
-      margin: 5px;
-      font-size: 13px;
-      padding: 2px;
-      border: 1px solid $border-color02;
-      border-radius: 4px;
+    .small-text {
+      font-size: 12px;
+      color: $text-color06;
     }
-    &__text {
-      .large-text {
-        font-size: 17px;
-        font-weight: 500;
-        margin: 1rem 0;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    .card {
+      border: 1px solid lightgrey;
+      padding: 8px;
+      width: calc(100% / 3 - 2rem);
+      margin-right: 1rem;
+      &__img {
+        position: relative;
       }
-      .small-text {
-        width: 70%;
-        font-size: 12px;
-        color: $text-color04;
+      &__date {
+        position: absolute;
+        top: 0;
+        background: white;
+        margin: 5px;
+        font-size: 13px;
+        padding: 2px;
+        border: 1px solid $border-color02;
+        border-radius: 4px;
+      }
+      &__text {
+        .large-text {
+          font-size: 17px;
+          font-weight: 500;
+          margin: 1rem 0;
+        }
+        .small-text {
+          width: 70%;
+          font-size: 12px;
+          color: $text-color04;
+        }
       }
     }
   }
