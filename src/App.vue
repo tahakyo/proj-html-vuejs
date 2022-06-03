@@ -8,7 +8,7 @@
       <AppMain />
     </main>
     <footer>
-      <Appfooter />
+      <Appfooter :footerMenu="footerMenu"/>
     </footer>
   </div>
 </template>
@@ -54,6 +54,32 @@ export default {
           url: "#",
           menu: "Contact Us",
           active: "false",
+        },
+      ],
+      footerMenu: [
+        {
+          title: "Menu",
+          voice1: "About Us",
+          voice2: "Theme",
+          voice3: "Features",
+          voice4: "Pricing",
+          voice5: "Blog",
+        },
+        {
+          title: "About Us",
+          voice1: "About Sofbox",
+          voice2: "Roadmap",
+          voice3: "How it Work",
+          voice4: "Team",
+          voice5: "News",
+        },
+        {
+          title: "Quick Links",
+          voice1: "About Us",
+          voice2: "Theme",
+          voice3: "Features",
+          voice4: "Pricing",
+          voice5: "Blog",
         },
       ],
     };

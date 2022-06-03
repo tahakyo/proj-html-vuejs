@@ -24,8 +24,8 @@ export default {
     PopularFeatures,
     OurTestimonials,
     LatestPosts,
-    AppContacts
-},
+    AppContacts,
+  },
   data: function () {
     return {
       marketingCard: [

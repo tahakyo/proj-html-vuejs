@@ -78,7 +78,7 @@
                 placeholder="Your Message"
               ></textarea>
             </div>
-            <div class="myButton">Send Message</div>
+            <div class="myButton mb-6">Send Message</div>
           </div>
         </div>
       </div>
@@ -111,11 +111,11 @@ section {
   }
   .localisation {
     display: flex;
+    justify-content: space-between;
     .map {
-      width: calc(100% / 2 - 2rem);
+      width: 60%;
       height: 50%;
       position: relative;
-      margin-right: 1rem;
       .indication {
         display: flex;
         justify-content: space-between;
@@ -188,6 +188,7 @@ section {
       }
     }
     .adress {
+      width: 35%;
       .logo {
         width: 100px;
         margin-bottom: 2rem;
